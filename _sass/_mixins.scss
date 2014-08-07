@@ -1,11 +1,15 @@
 @mixin bp($point) {
 
   $bp-phone: "(max-width: 38em)";
+  $bp-notphone: "(min-width: 38em)";
   $bp-smalldisplay: "(max-width: 78em)";
   $bp-mediumdisplay: "(max-width: 100em)";
 
   @if $point == phone {
     @media #{$bp-phone} { @content; }
+  }
+  @if $point == not-phone {
+    @media #{$bp-notphone} { @content; }
   }
   @else if $point == small-display {
     @media #{$bp-smalldisplay} { @content; }

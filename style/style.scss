@@ -3,10 +3,11 @@
 
 @import "../_sass/_normalize.scss";
 @import "../_sass/_font.scss";
+@import "../_sass/_mixins.scss";
 
 body {
   font-family: 'opensans-light';
-  @media (min-device-width: 480px) > * {
+  bp(notphone) & > * {
     padding: 0 15%;
   }
 }
