@@ -3,7 +3,7 @@ $light-gray:rgba(0,0,0,0.1);
 .button {
   border-radius: 1em;
   border: none;
-  box-shadow: 0.3em 0px $light-gray;
+  box-shadow: 0 0.3em 0 $light-gray;
   padding: 0.3em 0.6em;
   transition: background 1s, color 2s;
   > span {
