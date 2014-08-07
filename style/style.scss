@@ -7,7 +7,9 @@
 
 body {
   font-family: 'opensans-light';
-  @include bp(not-phone) & > * {
-    padding: 0 15%;
+   > * {
+    @include bp(not-phone) {
+      padding: 0 15%;
+    }
   }
 }
