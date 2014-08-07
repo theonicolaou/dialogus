@@ -1,2 +1,6 @@
-@import "../font/_font.scss";
 @import "_normalize.scss";
+@import "../font/_font.scss";
+
+body {
+  font-family: 'opensans-light';
+}
