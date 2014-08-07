@@ -6,7 +6,7 @@ button {
   box-shadow: 0.3em 0px $light-gray;
   padding: 0.3em 0.6em;
   transition: background 1s, color 2s;
-  > span {
+  > span, > a {
     transition: background 1s, color 2s;
   }
 }
@@ -30,7 +30,7 @@ button.green {
 button {
   background-position: 100% bottom;
   background-size: 200%, 100%;
-  span {
+  > span, > a {
     .textfillcolor & {
       background: linear-gradient(right, $gray 50%, $beige 50%);
       background-clip: text;
@@ -40,7 +40,7 @@ button {
   }
   &:hover {
     background-position: 0em bottom;
-    > span {
+    > span, > a {
       color: $beige;
       .textfillcolor & {
         background-position: 0em bottom;
