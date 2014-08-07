@@ -1,0 +1,54 @@
+---
+---
+
+@import "../_sass/_normalize.scss";
+@import "../_sass/_font.scss";
+@import "../_sass/_mixins.scss";
+
+$dark-green:#88b714;
+$dark-blue:#13597b;
+$light-green:#f8fdeb;
+$light-blue:#e8f0f3;
+$gray:#848484;
+$beige:#ebe5de;
+$dark-beige:#e2dcd5;
+
+//LAYOUT
+body {
+   > * {
+    @include bp(not-phone) {
+      padding: 0 15%;
+    }
+    @include bp(phone) {
+      padding: 0 1em;
+    }
+  }
+}
+
+//MODULES
+  //HEADER
+  header {
+
+  }
+
+  //BUTTON
+  @import "../_sass/modules/_button.scss";
+
+//FONTS
+body {
+  font-family: 'opensans-light';
+}
+
+h1 {
+  font-family: 'champagne-limousines';
+  font-weight: 100;
+}
+
+//COLOR
+body {
+  color: $gray;
+}
+
+h1 {
+  color: $dark-blue;
+}

@@ -1,0 +1,53 @@
+$light-gray:rgba(0,0,0,0.1);
+
+button {
+  border-radius: 1em;
+  border: none;
+  box-shadow: 0.3em 0px $light-gray;
+  padding: 0.3em 0.6em;
+  transition: background 1s, color 2s;
+  > span {
+    transition: background 1s, color 2s;
+  }
+}
+
+button.blue {
+  background-color: $light-blue;
+  background-image: linear-gradient(to right, $dark-blue 50%, $light-blue 50%);
+  .no-cssgradients &:hover, .no-js &:hover {
+    background-color: $dark-blue;
+  }
+}
+
+button.green {
+  background-color: $light-green;
+  background-image: linear-gradient(to right, $dark-green 50%, $light-green 50%);
+  .no-cssgradients &:hover, .no-js &:hover {
+    background-color: $dark-green;
+  }
+}
+
+button {
+  background-position: 100% bottom;
+  background-size: 200%, 100%;
+  span {
+    .textfillcolor & {
+      background: linear-gradient(right, $gray 50%, $beige 50%);
+      background-clip: text;
+      @extend button;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &:hover {
+    background-position: 0em bottom;
+    > span {
+      color: $beige;
+      .textfillcolor & {
+        background-position: 0em bottom;
+      }
+    }
+  }
+  .no-js & {
+    background-image: none;
+  }
+}
