@@ -5,8 +5,16 @@
 @import "../_sass/_font.scss";
 @import "../_sass/_mixins.scss";
 
+$dark-green:#88b714;
+$dark-blue:#13597b;
+$light-green:#f8fdeb;
+$light-blue:#e8f0f3;
+$gray:#848484;
+$beige:#ebe5de;
+$dark-beige:#e2dcd5;
+
+//LAYOUT
 body {
-  font-family: 'opensans-light';
    > * {
     @include bp(not-phone) {
       padding: 0 15%;
@@ -15,4 +23,20 @@ body {
       padding: 0 1em;
     }
   }
+}
+
+//MODULES
+  //HEADER
+  header {
+
+  }
+
+//FONTS
+body {
+  font-family: 'opensans-light';
+}
+
+//COLOR
+body {
+  color: $gray;
 }
