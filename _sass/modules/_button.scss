@@ -1,6 +1,6 @@
 $light-gray:rgba(0,0,0,0.1);
 
-button {
+.button {
   border-radius: 1em;
   border: none;
   box-shadow: 0.3em 0px $light-gray;
@@ -11,7 +11,7 @@ button {
   }
 }
 
-button.blue {
+.button.blue {
   background-color: $light-blue;
   background-image: linear-gradient(to right, $dark-blue 50%, $light-blue 50%);
   .no-cssgradients &:hover, .no-js &:hover {
@@ -19,7 +19,7 @@ button.blue {
   }
 }
 
-button.green {
+.button.green {
   background-color: $light-green;
   background-image: linear-gradient(to right, $dark-green 50%, $light-green 50%);
   .no-cssgradients &:hover, .no-js &:hover {
@@ -27,14 +27,14 @@ button.green {
   }
 }
 
-button {
+.button {
   background-position: 100% bottom;
   background-size: 200%, 100%;
   span {
     .textfillcolor & {
       background: linear-gradient(right, $gray 50%, $beige 50%);
       background-clip: text;
-      @extend button;
+      @extend .button;
       -webkit-text-fill-color: transparent;
     }
   }
