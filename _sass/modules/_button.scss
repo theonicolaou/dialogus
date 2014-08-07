@@ -30,11 +30,12 @@ $light-gray:rgba(0,0,0,0.1);
 .button {
   background-position: 100% bottom;
   background-size: 200%, 100%;
-  span {
+  > span {
     .textfillcolor & {
       background: linear-gradient(right, $gray 50%, $beige 50%);
       background-clip: text;
-      @extend .button;
+      background-position: 100% bottom;
+      background-size: 200%, 100%;
       -webkit-text-fill-color: transparent;
     }
   }
