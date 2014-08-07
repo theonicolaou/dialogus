@@ -423,3 +423,17 @@ td,
 th {
   padding: 0;
 }
+
+/**
+ * use border-box as default
+ */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
