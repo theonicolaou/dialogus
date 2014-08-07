@@ -28,7 +28,7 @@ body {
 //MODULES
   //HEADER
   header {
-
+    
   }
 
 //FONTS
@@ -36,7 +36,16 @@ body {
   font-family: 'opensans-light';
 }
 
+h1 {
+  font-family: 'champagne-limousines';
+  font-weight: 100;
+}
+
 //COLOR
 body {
   color: $gray;
+}
+
+h1 {
+  color: $dark-blue;
 }
